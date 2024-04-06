@@ -1,0 +1,165 @@
+<style>
+  .main-container {
+    align-items: center;
+    background-color: #181818;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 60px;
+  }
+
+  @media (max-width: 991px) {
+    .main-container {
+      padding: 0 20px;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 104px;
+    max-width: 100%;
+    width: 575px;
+  }
+
+  @media (max-width: 991px) {
+    .content-wrapper {
+      margin-top: 40px;
+    }
+  }
+
+  .portal-title {
+    color: #fff;
+    font: 600 48px Poppins, sans-serif;
+    text-align: center;
+  }
+
+  @media (max-width: 991px) {
+    .portal-title {
+      font-size: 40px;
+      max-width: 100%;
+    }
+  }
+
+  .logo-container {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 53px;
+  }
+
+  @media (max-width: 991px) {
+    .logo-container {
+      flex-wrap: wrap;
+      margin-top: 40px;
+      max-width: 100%;
+    }
+  }
+
+  .logo-image {
+    align-self: stretch;
+    aspect-ratio: 1.35;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+
+  .logo-divider {
+    align-self: stretch;
+    background-color: #d9d9d9;
+    border-radius: 16px;
+    height: 70px;
+    margin: auto 0;
+    width: 2px;
+  }
+
+  .logo-image-right {
+    align-self: stretch;
+    aspect-ratio: 1;
+    margin: auto 0;
+    max-width: 100%;
+    object-fit: auto;
+    object-position: center;
+    width: 212px;
+  }
+
+  .signup-button {
+    align-self: center;
+    background-color: #616161;
+    border-color: rgba(33, 33, 33, 1);
+    border-radius: 70px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: center;
+    margin-top: 68px;
+    max-width: 100%;
+    padding: 9px 15px;
+    width: 309px;
+  }
+
+  @media (max-width: 991px) {
+    .signup-button {
+      margin-top: 40px;
+    }
+  }
+
+  .signup-content {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+  }
+
+  .google-logo {
+    aspect-ratio: 0.97;
+    object-fit: auto;
+    object-position: center;
+    width: 39px;
+  }
+
+  .signup-text {
+    font-family: IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .login-link {
+    color: #fff;
+    font: 500 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif;
+    margin-top: 67px;
+    text-align: center;
+    text-decoration-line: underline;
+  }
+
+  @media (max-width: 991px) {
+    .login-link {
+      margin-top: 40px;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<main class="main-container">
+  <div class="content-wrapper">
+    <h1 class="portal-title">IKAC Web Portal</h1>
+    <div class="logo-container">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b2be4768fa4ee669c47effeae7a3cc98fe1a86694691e1d169daeefd91f7587?apiKey=d86ade2eaa0442e880ddd2aa236aa945&" alt="" class="logo-image" />
+      <div class="logo-divider"></div>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4f3b46465b84a9b96f8fca263de7d17e33f3a224817a43356255e132ad4595e?apiKey=d86ade2eaa0442e880ddd2aa236aa945&" alt="" class="logo-image-right" />
+    </div>
+    <button class="signup-button">
+      <div class="signup-content">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/916f1f4c1fc7ef73987dfea3b2e01d2593a102eabb6111918f768ee1aeeab498?apiKey=d86ade2eaa0442e880ddd2aa236aa945&" alt="" class="google-logo" />
+        <span class="signup-text">Sign Up With Google</span>
+      </div>
+    </button>
+    <p class="login-link">
+      Already have an account? <a href="#">Log in</a>
+    </p>
+  </div>
+</main>

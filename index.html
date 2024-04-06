@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Last Name</title>
+</head>
+<body>
+    <h2>Find Last Name</h2>
+    <form id="nameForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <input type="submit" value="Search">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('nameForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const response = await fetch(`/getLastName/${firstName}`);
+            const lastName = await response.text();
+            document.getElementById('result').textContent = `Last Name: ${lastName}`;
+        };
+    </script>
+</body>
+</html>
